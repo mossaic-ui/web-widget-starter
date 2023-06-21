@@ -51,6 +51,7 @@
       - [пример типа описывающего опции виджета](lib/src/my-lib/my-lib-widget-options.ts)
     - Метод `setValue` используется для изменения значений атрибутов виджета, в частности в редакторе вызывается этот метод
       для изменений значений виджета через панель параметров виджета. Метод `setValue` принимает ключ объекта опций виджета и новое значение
+  - Для порождения событий виджет должен использовать свойство `emit` из [RenderOptions](packages/widgets-utils/widget-renderer/render-options.ts), см. пример с событием `clickOnEvent` в тестовом виджете
 
 - Класс виджета может наследовать класс [Widget](packages/widgets-utils/widget-renderer/widget.ts), который в свою очередь реализует интерфейс `WidgetRenderer`. Данный класс реализует общую логику работы с виджетом
 - Для инициализации виджета в редакторе используется объект, реализующий интерфейс [WidgetDescriptor](packages/widgets-utils/editor-utils/widget-descriptor.ts) из [@mossaic-ui/widgets-utils](packages/widgets-utils)

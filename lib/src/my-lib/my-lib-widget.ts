@@ -35,15 +35,6 @@ export class MyLibWidget<
             `<div class='${styles.listContainer}'></div>`
         );
         this.elem.appendChild(this.listContainer);
-
-        this.elem?.addEventListener('click', () => {
-            this.emitEvent('clickOnEvent', {
-                value: {
-                    event: 'event',
-                    datetime: Date.now(),
-                },
-            });
-        });
         this.renderListItems();
         return this.elem;
     }
@@ -78,21 +69,23 @@ export class MyLibWidget<
                 .then(data => {
                     this.listContainer.innerHTML = '';
                     data.forEach(item => {
-                        this.listContainer.appendChild(
-                            this.options.eventDayTemplate
-                                ? this.options.eventDayTemplate.render(
-                                      item as any
-                                  )
-                                : createElement(
-                                      `<div class="${styles.widgetItem}">
+                        const eventElem = this.options.eventDayTemplate
+                            ? this.options.eventDayTemplate.render(item as any)
+                            : createElement(
+                                  `<div class="${styles.widgetItem}">
                                                <div>${this.getTimeString(
                                                    item
                                                )}</div> 
                                                <br>           
                                                ${item['title']}
                                             </div>`
-                                  )
-                        );
+                              );
+                        this.listContainer.appendChild(eventElem);
+                        eventElem.addEventListener('click', () => {
+                            this.emitEvent('clickOnEvent', {
+                                value: item,
+                            });
+                        });
                     });
                 });
     }

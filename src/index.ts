@@ -8,20 +8,23 @@ import {DataSourceFromList} from './data-source/data-source';
 import data from './data-source/mock.json';
 import {WidgetRenderer} from '@mossaic-ui/widgets-utils';
 import {MyLibWidgetOptions} from '../lib/src/my-lib';
+import {values} from 'lodash-es';
 
 const root = document.createElement('div');
 root.classList.add('ui-editor-wrap-container');
 document.body.append(root);
 
+interface Event {
+    id: number;
+    title: string;
+    startDate: number;
+    endDate: number;
+}
+
 /** widget usage example */
 const initialDate = '2022-09-21';
 const widgetInstance = manifeset.factory('test', {}, {}) as WidgetRenderer<
-    MyLibWidgetOptions<{
-        id: number;
-        title: string;
-        startDate: number;
-        endDate: number;
-    }>
+    MyLibWidgetOptions<Event>
 >;
 const widgetElem = widgetInstance.render({
     defaultStartDatetime: new Date(initialDate).getTime(),
@@ -49,7 +52,11 @@ const widgetElem = widgetInstance.render({
             return Promise.resolve(undefined);
         },
     },
-    emit: {},
+    emit: {
+        clickOnEvent(payload) {
+            alert(payload.value.title);
+        },
+    },
 });
 
 root.appendChild(renderControlPanel());

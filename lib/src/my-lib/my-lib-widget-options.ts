@@ -14,4 +14,7 @@ export interface MyLibWidgetOptions<T> extends RenderOptions {
     /** ui templates for event rendering */
     eventDayTemplate?: UITemplate;
     eventMonthTemplate?: UITemplate;
+    emit: {
+        clickOnEvent: (payload: {value: T}) => void;
+    };
 }
