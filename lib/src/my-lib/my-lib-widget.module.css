@@ -1,0 +1,25 @@
+
+.mainWrapper {
+    background: var(--main-bg-color);
+    color: var(--main-theme-color);
+    border: 1px solid var(--main-border-color);
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.widgetItem {
+    border-radius: 4px;
+    padding: 8px;
+    max-width: 100px;
+    /*max-height: 32px;*/
+    overflow: auto;
+    background: var(--secondary-background-color);
+}

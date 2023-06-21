@@ -1,0 +1,6 @@
+{
+ "*.{js,ts, html}": ["yarn lint"],
+ "*.css": "yarn lint-css",
+ "*.sass": "yarn lint-css --custom-syntax postcss-sass",
+ "*.scss": "yarn lint-css --custom-syntax postcss-scss"
+}

@@ -1,0 +1,30 @@
+.mossaic-tiny-buttons-group {
+  display: flex;
+  margin-top: 5px;
+  gap: 12px;
+}
+
+.mossaic-tiny-buttons-group__item, .mossaic-tiny-button {
+  cursor: pointer;
+  font-size: 10px;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--main-disabled-color);
+  &:hover {
+    color: var(--secondary-theme-color);
+  }
+  &.is-destructive {
+    &:hover {
+      color: var(--main-alert-color);
+    }
+  }
+  &.mossaic-tiny-button--is-alt {
+    text-decoration: none;
+    font-size: 12px;
+    &:hover {
+      text-decoration: underline;
+    }
+ }
+}

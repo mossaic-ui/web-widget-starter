@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "allowJs": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "alwaysStrict": false,
+    "strict": true,
+    "useDefineForClassFields": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "removeComments": true,
+    "declarationMap": true,
+    "inlineSources": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@mossaic-ui/theme/*": [
+        "packages/theme/*"
+      ],
+      "@mossaic-ui/theme": [
+        "packages/theme"
+      ],
+      "@mossaic-ui/widgets-utils": [
+        "packages/widgets-utils/index.ts"
+      ],
+      "@my-lib": [
+        "lib/src/index.ts"
+      ]
+    }
+  }
+}

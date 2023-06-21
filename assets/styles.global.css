@@ -1,0 +1,22 @@
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ui-editor-wrap-container {
+    width: 100%;
+    height: 100%;
+}
+
+.ui-editor-wrap-container__control-panel {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+
+.ui-editor-wrap-container__control-panel button {
+    padding: 8px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@mossaic-ui/widgets-utils",
+  "version": "0.0.9",
+  "main": "index.ts",
+  "author": "S.Shchedromirskii",
+  "license": "ISC",
+  "peerDependencies": {
+    "uuid": "^9.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

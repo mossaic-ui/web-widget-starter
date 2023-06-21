@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*.d.ts"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+      },
+      "env": {
+        "commonjs": false,
+        "node": true
+      },
+      "extends": ["eslint:recommended", "prettier"],
+      "plugins": ["prettier"],
+      "rules": {
+        "max-len": ["error", {
+          "code": 120
+        }]
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json", "tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint", "prettier"],
+      "rules": {
+        "id-match": ["error", "^[a-zA-Z0-9_$]*$"],
+        "prettier/prettier": "error",
+        "@typescript-eslint/no-empty-function": "off",
+        "semi": ["error", "always"],
+        "no-empty-function": "off",
+        "no-prototype-builtins": "off",
+        "no-console": [2],
+        "max-len": ["error", {
+          "code": 120
+        }]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "parser": "@html-eslint/parser",
+      "plugins": ["prettier", "@html-eslint"],
+      "rules": {
+        "prettier/prettier": ["error", {"parser": "html"}]
+      }
+    }
+  ]
+}

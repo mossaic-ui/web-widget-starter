@@ -1,0 +1,61 @@
+{
+  "plugins": [
+    "stylelint-declaration-strict-value",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "scale-unlimited/declaration-strict-value": [
+      [
+        "/color$/",
+        "/background$/",
+        "/border$/",
+        "/shadow$/"
+      ],
+      {
+        "ignoreFunctions": false,
+        "ignoreValues": [
+          "0",
+          "/unset/",
+          "/linear-gradient/",
+          "/px$/",
+          "/%$/",
+          "/vw$/",
+          "/vh$/",
+          "/em$/",
+          "/rem$/",
+          "/ex$/",
+          "/ch$/",
+          "none",
+          "solid",
+          "transparent",
+          "inherit",
+          "initial",
+          "hidden",
+          "dotted",
+          "dashed",
+          "double",
+          "groove",
+          "ridge",
+          "inset",
+          "outset",
+          "no-repeat",
+          "fixed",
+          "scroll",
+          "local",
+          "/url$/",
+          "left",
+          "center",
+          "right",
+          "top",
+          "bottom",
+          "no-repeat",
+          "repeat",
+          "repeat-x",
+          "repeat-y",
+          "space",
+          "round"
+        ]
+      }
+    ]
+  }
+}

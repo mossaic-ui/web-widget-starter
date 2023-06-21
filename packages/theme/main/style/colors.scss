@@ -1,0 +1,67 @@
+
+:root {
+  --widgets-background-color: #f2f4f6;
+  --widgets-placeholder-text-color: #BCBEC0;
+  --widgets-disabled-color: #D3D3D3;
+  --widgets-border-color: #E6E7E8;
+  --widgets-text-color: #142134;
+  /** violet: #614AA3 */
+  --main-theme-color: #0047AB;
+  --main-theme-color-op-10: rgba(0, 71, 171, 0.1);
+  --main-theme-color-op-20: rgba(0, 71, 171, 0.2);
+  --main-theme-color-op-80: rgba(0, 71, 171, 0.8);
+  --main-error-color: #CA0D0D;
+  --main-warn-color: rgb(248, 163, 77);
+  --main-disabled-color: #B1B3B5; /** #b4b4b4; */
+  --main-placeholder-color:  #b4b4b4;
+  --alt-background-color: white;
+  --light-bg-color: #f7f8fa;
+  --main-bg-color: #ffffff;
+  --main-text-color: #787878;
+  --accent-text-color: #464646;
+  --secondary-text-color: #999999;
+  --contrast-text-color: white;
+  --main-text-dark-color: #142134;
+  --main-selection-color: #EDF4FD;
+  --main-border-color: #E0E0E0;
+  --main-border-light-color: #E0E0E0;
+  --light-border-color: #F6F6F6;
+  --dialog-bkg-color: #FAFAFA;
+  --code-color: #c7254e;
+  /** buttons */
+  --secondary-background-color: #F2F4F6;
+  --tertiary-background-color: #E7E7E7;
+  --secondary-button-active-background-color: #D5D6D7;
+  --main-button-disabled-background-color: #E5E7E9;
+  --main-button-disabled-text-color: #B0B0B0;
+  --main-button-pressed-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0047AB;
+  --main-button-hover-background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #0047AB;
+  /** out of design scheme */
+  --scrollbar-track-color: #E0E0E0;
+  --scrollbar-thumb-color: #828282;
+  --secondary-border-color: #dcdcdc;
+  --main-header-color: #828282;
+  --main-alert-bkg: #ff9d9d;
+  --main-alert-color: #DC143C;
+  --success-theme-color: #4dcd7d;
+  --success-color: #4dcd7d;
+  --dark-bg-color: #515153;
+  --panels-background-color: #fbfbff;
+  --secondary-theme-color: #09AEB8; /* #2ca7ff; */
+  --third-theme-color: #EEEEEE;
+  --dialog-delimiter-color: #EEEEEE;
+  --header-text-color: #BDBDBD;
+  --main-border-darker-color: var(--header-text-color);
+  --selected-value-color: rgb(144, 164, 174);
+  --widgets-fill-background-color: #67A6FF;
+  --project-page-text-color: #000000;
+  --overlay-background-color: rgba(43, 36, 62, 0.3);
+  --main-theme-color-bkg: rgba(0, 71, 171, 0.05);
+  --modal-bkg-color: rgba(0, 71, 171, 0.3);
+  --accent-bg-color: #f5f5f5;
+  --selection-bg-color: rgba(44, 167, 255, .1);
+  --selection-icon-bg-color: hsla(0, 0%, 47%, .2);
+  --main-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  /** move to other file */
+  --control-default-height: 32px
+}
