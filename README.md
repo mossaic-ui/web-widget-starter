@@ -65,7 +65,7 @@
 
 ### UI UX
 
-- нужно ориентироваться на [дизайн систему](https://www.figma.com/file/2wOPCn4nxT0BKYLIaOZ78M/MOSSAIC-UI-KIT?node-id=0%3A1&t=lb2J23ZnY4y2rvfF-1)
+- При возникновении вопросов по оформлению UI можно ориентироваться на [дизайн систему](https://www.figma.com/file/2wOPCn4nxT0BKYLIaOZ78M/MOSSAIC-UI-KIT?node-id=0%3A1&t=lb2J23ZnY4y2rvfF-1)
 
 #### 3d parties
 
